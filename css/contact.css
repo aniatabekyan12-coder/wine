@@ -1,0 +1,110 @@
+@import url("./global.css");
+
+section {
+    padding-bottom: 30px;
+}
+
+.heading {
+    margin-top: 100px;
+    color: var(--red);
+    font-size: 50px;
+    border-bottom: 3px solid var(--red);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.contact form {
+    width: 100%;
+    margin: 50px auto;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(139, 36, 11, 0.15);
+}
+
+.contact .input-box {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.contact .input-box input,
+.contact .input-box textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e5b8a8;
+    border-radius: 8px;
+    outline: none;
+    background: #fffaf8;
+    color: #333;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.contact .input-box input {
+    height: 55px;
+}
+
+.contact .input-box textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.input-box label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    background: #fffaf8;
+    padding: 0 5px;
+    transition: 0.2s ease;
+}
+
+.input-box textarea+label {
+    top: 20px;
+    transform: none;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: var(--red);
+    background: var(--white);
+}
+
+.input-box input:focus+label,
+.input-box textarea:focus+label {
+    top: 0;
+    transform: translateY(-50%);
+    color: var(--red);
+    font-size: 13px;
+    background: var(--white);
+}
+
+.input-box input:not(:placeholder-shown)+label,
+.input-box textarea:not(:placeholder-shown)+label {
+    top: 0;
+    transform: translateY(-50%);
+    color: var(--red);
+    font-size: 13px;
+    background: var(--white);
+}
+
+.contact button {
+    width: 100%;
+    padding: 15px 25px;
+    border: 2px solid var(--red);
+    border-radius: 8px;
+    background: var(--red);
+    color: var(--white);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact button:hover {
+    background: transparent;
+    color: var(--red);
+}
